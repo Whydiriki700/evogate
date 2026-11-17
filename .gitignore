@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+evogate-state.json
+evogate-ledger.jsonl

@@ -1,0 +1,21 @@
+{
+  "name": "demo suite",
+  "tasks": [
+    {
+      "id": "banner-color",
+      "input": "What color is the sky banner?",
+      "checks": {"contains_all": ["teal"]}
+    },
+    {
+      "id": "support-hours",
+      "input": "When does support open?",
+      "checks": {"contains_all": ["09:00", "source: handbook"]}
+    },
+    {
+      "id": "short-answer",
+      "critical": true,
+      "input": "What color is the sky banner? Answer briefly.",
+      "checks": {"contains_all": ["teal"], "max_chars": 60}
+    }
+  ]
+}
